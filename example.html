@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ExamplePage</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        /*
+        $(document).ready(function(){
+         $("p").click(function(){
+            $(this).hide();
+            $("button").click(function(){
+                $("p").show();
+            });
+        });
+    });*/ // toggle example
+    /*
+    $(document).ready(function(){
+            $("button").click(function(){
+                $("p").toggle("fast");
+        });
+    });*/
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").fadeToggle("slow");
+        });
+    });
+    </script>
+</head>
+<body>
+    <button>Toggle</button>
+    <P>Click over me , i will disappear</P>
+    <p> Click over me , i will disappear</p>
+    <div style="background-color:blue;height:150px;width:150px;position:absolute;" ></div>
+   <!-- <button>Show Me</button>-->
+   
+</body>
+</html>
